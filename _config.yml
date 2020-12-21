@@ -2,8 +2,8 @@
 title:               Slay The Dragon
 tagline:             'Burn The Budget'
 description:         'A test blog'
-url:                 https://dragondebtuic.github.io/
-baseurl:             https://dragondebtuic.github.io/
+url:                 http://dragondebtuic.github.io/
+baseurl:             http://dragondebtuic.github.io/
 paginate:            5
 permalink:           pretty
 

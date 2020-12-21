@@ -1,7 +1,7 @@
 # Setup
 title:               Dragon Debt
 tagline:             'A Debt Story'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'Welcome to our new site, please pardon our apperance while we set everything up'
 url:                 https://dragondebtuic.github.io/
 baseurl:             ''
 paginate:            5
@@ -9,14 +9,14 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Dragon Debt
+  url:               https://twitter.com/dragondebt
+  email:             Dragondebt@example.com
 
 # Gems
 plugins:
   - jekyll-paginate
 
 # Custom vars
-version:             1.1.0
+version:             1.1.1
 #google_analytics_id: UA-146052-15

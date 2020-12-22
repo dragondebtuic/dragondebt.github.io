@@ -543,6 +543,10 @@ a.pagination-item:hover {
 .theme-base-DD .related-posts li a:hover {
   color: #004aad;
 }
+.theme-base-DD .masthead {background-color: #cd1346;}
+.theme-base-DD .masthead a {
+  color: white;
+}
 
 /*
  * Overlay sidebar

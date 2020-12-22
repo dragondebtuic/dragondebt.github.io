@@ -532,6 +532,17 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Dragon */
+.theme-base-DD .sidebar,
+.theme-base-DD .sidebar-toggle:active,
+.theme-base-DD #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #004aad;
+}
+.theme-base-DD .container a,
+.theme-base-DD .sidebar-toggle,
+.theme-base-DD .related-posts li a:hover {
+  color: #004aad;
+}
 
 /*
  * Overlay sidebar

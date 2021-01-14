@@ -199,11 +199,11 @@ a.sidebar-nav-item:focus {
     padding-right: 1.5rem;
   }
 }
-#social-media.fab {
-    padding:  1rem;
-    font-size: 2em;
+#social-media .fab {
+    padding:  10px;
+    font-size: 2.5em;
   }
-#social-media.fab:hover {
+#social-media .fab:hover {
   color: #cd1346;
 }
 /* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */

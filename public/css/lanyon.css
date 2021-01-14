@@ -551,7 +551,10 @@ a.pagination-item:hover {
 .theme-base-DD .related-posts li a:hover {
   color: #004aad;
 }
-.theme-base-DD .masthead {background-color: #cd1346;}
+.theme-base-DD .masthead {
+  background-color: #cd1346;
+  height: 5.5em;
+}
 .theme-base-DD .masthead a {
   color: white;
   font-family: 'Impact';
@@ -568,6 +571,9 @@ a.pagination-item:hover {
   width: 10%;
   display: inline-block;
   margin-bottom: -22px;
+}
+.theme-base-DD .sidebar-toggle {
+  margin-top: 1%;
 }
 /*
  * Overlay sidebar

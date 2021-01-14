@@ -53,7 +53,7 @@ social-media:
     fa-icon: 'fa-youtube'
 
   tiktok:
-    id: 'dragondebt'
+    id: '@dragondebt'
     href: 'https://tiktok.com/'
     title: 'TikTok'
     fa-icon: 'fa-tiktok'

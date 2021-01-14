@@ -21,37 +21,37 @@ plugins:
 version:             1.1.1
 #google_analytics_id: UA-146052-15
 
-Social-Media:
+social-media:
   facebook:
     id:
     href: 'https://www.facebook.com/'
     title: 'Facebook'
     fa-icon: 'fa-facebook-square'
-    
+
   twitter:
     id: 'dragondebt'
     href: 'https://www.twitter.com/'
     title: 'Twitter'
     fa-icon: 'fa-twitter-square'
-  
+
   github:
     id: 'jreel'
     href: 'https://github.com/'
     title: 'GitHub'
     fa-icon: 'fa-github-square'
-  
+
   instagram:
     id: 'dragondebtuic'
     href: 'https://instagram.com/'
     title: 'Instagram'
     fa-icon: 'fa-instagram'
-  
+
   youtube:
     id:
     href: 'https://youtube.com/'
     title: 'YouTube'
     fa-icon: 'fa-youtube'
-    
+
   tiktok:
     id: 'dragondebt'
     href: 'https://tiktok.com/'

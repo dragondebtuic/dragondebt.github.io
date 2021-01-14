@@ -199,7 +199,8 @@ a.sidebar-nav-item:focus {
     padding-right: 1.5rem;
   }
 }
-#social-media .fab {
+#social-media .fab,
+#social-media .fas {
     padding:  10px;
     font-size: 2.5em;
   }

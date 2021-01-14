@@ -1,7 +1,7 @@
 # Setup
 title:               Dragon Debt
 tagline:             'A Debt Story'
-description:         'Welcome to our new site, please pardon our apperance while we set everything up'
+description:         'Welcome to our new site, please pardon our appearance while we set everything up'
 url:                 https://dragondebtuic.github.io/
 baseurl:             ''
 paginate:            5

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Burn the Budget
 ---
 
 <p class="message">

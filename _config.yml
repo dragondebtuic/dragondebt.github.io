@@ -27,34 +27,40 @@ social-media:
     id:
     href: 'https://www.facebook.com/'
     title: 'Facebook'
-    fa-icon: 'fa-facebook-square'
+    fa-icon: 'fab fa-facebook-square'
 
   twitter:
     id: 'dragondebt'
     href: 'https://www.twitter.com/'
     title: 'Twitter'
-    fa-icon: 'fa-twitter-square'
+    fa-icon: 'fab fa-twitter-square'
 
   github:
     id:
     href: 'https://github.com/'
     title: 'GitHub'
-    fa-icon: 'fa-github-square'
+    fa-icon: 'fab fa-github-square'
 
   instagram:
     id: 'dragondebtuic'
     href: 'https://instagram.com/'
     title: 'Instagram'
-    fa-icon: 'fa-instagram'
+    fa-icon: 'fab fa-instagram'
 
   youtube:
     id:
     href: 'https://youtube.com/'
     title: 'YouTube'
-    fa-icon: 'fa-youtube'
+    fa-icon: 'fab fa-youtube'
 
   tiktok:
     id: '@dragondebt'
     href: 'https://tiktok.com/'
     title: 'TikTok'
-    fa-icon: 'fa-tiktok'
+    fa-icon: 'fab fa-tiktok'
+  
+  email:
+    id: 'dragondebtuic@gmail.com'
+    href: 'mailto:'
+    title: 'Email'
+    fa-icon: 'fas fa-envelope'

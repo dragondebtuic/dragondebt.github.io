@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Landing
 ---
 # Welcome To Dragon Debt
 We're here to #burnthebudget at UIC

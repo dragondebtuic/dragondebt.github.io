@@ -557,7 +557,18 @@ a.pagination-item:hover {
   font-family: 'Impact';
   font-size: xx-large;
 }
-
+.theme-base-DD .masthead small {
+  color: #f8a10d;
+}
+.theme-base-DD .sidebar-item p {
+  color: white;
+}
+.theme-base-DD .masthead-image {
+  position: relative;
+  width: 10%;
+  display: inline-block;
+  margin-bottom: -22px;
+}
 /*
  * Overlay sidebar
  *

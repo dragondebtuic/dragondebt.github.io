@@ -35,7 +35,7 @@ social-media:
     fa-icon: 'fa-twitter-square'
 
   github:
-    id: 'jreel'
+    id:
     href: 'https://github.com/'
     title: 'GitHub'
     fa-icon: 'fa-github-square'

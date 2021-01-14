@@ -28,9 +28,9 @@
     <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
     <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
   </nav>
-
+<center>
 <div class="sidebar-social sidebar-item" id="social-media">
-  <center>
+ 
     {% assign sm = {site.social-media} %}
       {% for entry in sm %}
       {% assign key = entry | first %}
@@ -38,7 +38,6 @@
           <a target="_blank" rel="noopener" href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="{{ sm[key].fa-icon }}"></i></a>
         {% endif %}
   {% endfor %}
-  </center>
 </div>
 
   <div class="sidebar-item">
@@ -47,3 +46,4 @@
     </p>
   </div>
 </div>
+</center>

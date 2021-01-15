@@ -2,6 +2,7 @@
 layout: page
 title: Welcome
 ---
+
 # Welcome To Dragon Debt
 We're here to #burnthebudget at UIC
 

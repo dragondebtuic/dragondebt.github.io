@@ -575,6 +575,12 @@ a.pagination-item:hover {
 .theme-base-DD .sidebar-toggle {
   margin-top: 1%;
 }
+.theme-base-DD {
+  background-image: url(/public/images/dragonheadbg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
 /*
  * Overlay sidebar
  *

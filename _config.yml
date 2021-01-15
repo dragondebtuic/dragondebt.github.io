@@ -17,11 +17,6 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
-  - kramdown
-
-# Markdown Options
-kramdown:
-  html_to_native: true
 
 # Custom vars
 version:             1.1.1

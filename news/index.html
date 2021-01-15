@@ -9,7 +9,7 @@ Posts need to be in the _posts folder.
 {% endcomment %}
 
 <div class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <div class="post">
         <h1 class="post-title">
             <a href="{{ post.url | absolute_url }}">

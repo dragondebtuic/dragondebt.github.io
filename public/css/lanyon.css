@@ -486,7 +486,7 @@ a.pagination-item:hover {
   border-style: solid;
 }
 .theme-base-DD {
-  background-image: url(/public/images/dragonheadbg.png);
+  background-image: url(/public/images/assets/dragonheadbg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right bottom;

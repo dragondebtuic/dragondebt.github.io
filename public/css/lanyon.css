@@ -466,6 +466,7 @@ a.pagination-item:hover {
 }
 .theme-base-DD .masthead small {
   color: #f8a10d;
+  font-family: 'Montserrat', 'Verdana', sans-serif;
 }
 .theme-base-DD .sidebar-item p {
   color: white;

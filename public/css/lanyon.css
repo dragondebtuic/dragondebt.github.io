@@ -492,6 +492,9 @@ a.pagination-item:hover {
   background-position: right bottom;
   background-size: 45%;
 }
+@media (max-width: 480px) {
+  .masthead-image {display: none;}
+}
 
 /* Image Gallery - See _includes/image-gallery.html */
 .image-gallery {

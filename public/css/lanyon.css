@@ -493,7 +493,12 @@ a.pagination-item:hover {
   background-size: 45%;
 }
 @media (max-width: 480px) {
-  .masthead-image {display: none;}
+  .masthead-image {
+    display: none !important;
+    }
+  .theme-base-DD {
+    background-size: 100%;
+  }
 }
 
 /* Image Gallery - See _includes/image-gallery.html */

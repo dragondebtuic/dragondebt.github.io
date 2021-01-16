@@ -22,7 +22,12 @@ plugins:
 version:             1.1.1
 google_analytics_id: 
 
-#Social Media Links In Sidebar
+# Image Gallery  
+imagesurl: "/public/images/"
+thumbsurl: "/public/images/thumbs"
+
+
+# Social Media Links In Sidebar
 social-media:
   facebook:
     id:

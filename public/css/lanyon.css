@@ -234,7 +234,7 @@ a.sidebar-nav-item:focus {
   color: #505050;
   background-color: #fff;
   border-radius: .25rem;
-  cursor: pointer;
+  /*cursor: pointer; */
 }
 
 .sidebar-toggle::before {

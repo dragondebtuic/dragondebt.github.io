@@ -54,7 +54,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Spartan","PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: #004aad;
   letter-spacing: -.025rem;
 }
@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   overflow-y: auto;
   font-family: "Spartan","PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -471,6 +472,7 @@ a.pagination-item:hover {
 .theme-base-DD .masthead a {
   color: white;
   font-family: 'Spartan','Impact','Arial Black',sans-serif;
+  font-weight: 800;
   font-size: 2.5rem;
 }
 .theme-base-DD .masthead small {

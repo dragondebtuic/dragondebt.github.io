@@ -10,8 +10,8 @@ Here's a basic overview with links I thought might be helpful. Goodluck.
 ## Build Information
 
 * DragonDebt.com is hosted for free on [Github Pages](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages)
-* The domain name leased through [Namecheap](namecheap.com)
-* Github Pages Uses [Jekyll](http://jekyllrb.com) to build these free pages.
+* The domain name leased through [Namecheap](https://namecheap.com)
+* Github Pages Uses [Jekyll](https://jekyllrb.com) to build these free pages.
 * The theme we are using is build on [Lanyon](https://github.com/poole/lanyon)
 
 ## Posting

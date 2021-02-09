@@ -459,7 +459,7 @@ a.pagination-item:hover {
 .theme-base-DD #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #961a52;
   font-family: "Spartan", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 .theme-base-DD .container a,
 .theme-base-DD .sidebar-toggle,

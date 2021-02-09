@@ -456,7 +456,7 @@ a.pagination-item:hover {
 .theme-base-DD .sidebar,
 .theme-base-DD .sidebar-toggle:active,
 .theme-base-DD #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #004aad;
+  background-color: #961a52;
   font-family: "Spartan", Helvetica, Arial, sans-serif;
 }
 .theme-base-DD .container a,
@@ -465,7 +465,7 @@ a.pagination-item:hover {
   color: #004aad;
 }
 .theme-base-DD .masthead {
-  background-color: #3db5e7;
+  background-color: #010e44;
   height: 5.5rem;
 }
 .theme-base-DD .masthead a {

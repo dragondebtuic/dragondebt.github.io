@@ -457,6 +457,11 @@ a.pagination-item:hover {
 .theme-base-DD .page-title {
   color: #961a52;
   font-weight: 600;
+}
+.theme-base-DD .page .social-icon {
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: #00b1e8;
 } 
 .theme-base-DD .sidebar,
 .theme-base-DD .sidebar-toggle:active,

@@ -25,5 +25,5 @@ Roosevelt Network
 
 ## Are you having a similar experience at your University?     
 
-
+{%comment%} This pulls the email from the _config.yml file, edit it there {%endcomment%}
 Email us directly at [{{site.social-media.email.id}}]({{site.social-media.email.href}}{{site.social-media.email.id}})

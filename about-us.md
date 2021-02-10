@@ -12,8 +12,8 @@ As a result, we came together created this project to call attention to and #Bur
 
 ## Our Goals  
 * Raise consciousness of and accessibility to UIC's budget.   
-* Host & maintain dragon debt    website as a watchdog of UIC's harmful in/actions and decisions.  
-* Create for students, staff, faculty & community the space to advocate for our money to match our needs—and build a more equitable budget.
+* Host & maintain dragon debt website as a watchdog for UIC's harmful actions as well as its inaction.  
+* Create for students, staff, faculty & the community the space to advocate for our money to match our needs and implement a more equitable budget.
 
 
 ## The following are the organizations who helped create this project:     

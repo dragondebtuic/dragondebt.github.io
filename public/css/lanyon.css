@@ -453,13 +453,17 @@ a.pagination-item:hover {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
-/* Dragon */ 
+/* Dragon */
+.theme-base-DD .page-title {
+  color: #e80036;
+  font-weight: 600;
+} 
 .theme-base-DD .sidebar,
 .theme-base-DD .sidebar-toggle:active,
 .theme-base-DD #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #961a52;
   font-family: "Spartan", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .theme-base-DD .container a,
 .theme-base-DD .sidebar-toggle,

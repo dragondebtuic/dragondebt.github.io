@@ -40,5 +40,6 @@ Here's a basic overview with links I thought might be helpful. Goodluck.
 ## To Do List
 - [ ] Submenu items
 - [ ] Setup Gmail to @dragondebt.com
-
+  - [x] Setup email forwarding in namecheap
+  - [ ] Setup Gmail to send as @dragondebt
 

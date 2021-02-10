@@ -25,6 +25,5 @@ Roosevelt Network
 
 ## Are you having a similar experience at your University?     
 
-{%raw%}
-Email us directly at <a href="{{site.social-media.email.href}}{{site.social-media.email.id}}">{{site.social-media.id}}</a>
-{%endraw%}
+
+Email us directly at [{{site.social-media.email.id}}]({{site.social-media.email.href}}{{site.social-media.email.id}})

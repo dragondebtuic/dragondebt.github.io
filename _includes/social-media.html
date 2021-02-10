@@ -1,0 +1,8 @@
+{% assign sm = {site.social-media} %}
+    {% for entry in sm %}
+        {% assign key = entry | first %}
+            {% if sm[key].id %}
+            <a target="_blank" rel="noopener" href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i
+                    class="{{ sm[key].fa-icon }}"></i></a>
+            {% endif %}
+{% endfor %}

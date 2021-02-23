@@ -7,4 +7,6 @@ In the summer of 2020, we witnessed a national outcry to defund the police as mi
 
 In response to this public outcry and rising awareness, students at UIC came together and composed a letter of demands that they then provided to UIC administration to not only acknowledge but systematically address the oppression and anti-Blackness experienced by UIC students, faculty, and the larger community.  Below you will find UIC Student Demands Letter.  
 
+<iframe src="https://docs.google.com/document/u/1/d/e/2PACX-1vS5aNtgjnyFemX1x2EcgplCg26yTnM5BTW9qd84wCJY6KeoHieUKFtu-xPxNz4lStpaBowyV7SeuE-p/pub" title="student demands"></iframe>
+
 \*__It is important to note that as of February 2021, the UIC administration has not directly addressed the above letter.__\*

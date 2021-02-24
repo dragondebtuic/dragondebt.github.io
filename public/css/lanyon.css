@@ -61,16 +61,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 
 Markdown image tags for 
-#left and #right
+#md #left #right
 */
-
-img[src *="#left"] {
+img[src *="#md"],
+.flyer {
    max-width:75%;
    max-height:50%;
    margin-left: auto;
    margin-right:auto;
 }
-img[src *="#right"] {
+img[src *="#left"] {
+   float: left;
+   max-width:75%;
+   max-height:50%;
+   margin-left: auto;
+   margin-right:auto;
+}
+img[src *="#right"], {
+   float: left;
    max-width:75%;
    max-height:50%;
    margin-left: auto;

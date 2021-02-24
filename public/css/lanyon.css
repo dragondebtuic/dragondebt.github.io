@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
    max-height:50%;
    margin-left: auto;
    margin-right:auto;
+   margin-top: 1rem;
 }
 
 /* 
@@ -76,6 +77,7 @@ img[src *="#center"] {
    max-height:50%;
    margin-left: auto;
    margin-right:auto;
+   margin-top: 1rem;
 }
 img[src *="#left"] {
    float: left;
@@ -83,6 +85,7 @@ img[src *="#left"] {
    max-height:50%;
    margin-left: auto;
    margin-right:auto;
+   margin-top: 1rem;
 }
 img[src *="#right"], {
    float: left;
@@ -90,6 +93,7 @@ img[src *="#right"], {
    max-height:50%;
    margin-left: auto;
    margin-right:auto;
+   margin-top: 1rem;
 }
 
 /* Sets the iframe size dyanmically */

@@ -59,15 +59,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
-img[src~="left"] {
-   width:50%;
-   height:50%;
-   float: left;
+/* 
+Markdown image tags for 
+#left and #right
+*/
+
+img[src *="#left"] {
+   max-width:75%;
+   max-height:50%;
+   margin-left: auto;
+   margin-right:auto;
 }
-img[src~="right"] {
-   width:50%;
-   height:50%;
-   float: left;
+img[src *="#right"] {
+   max-width:75%;
+   max-height:50%;
+   margin-left: auto;
+   margin-right:auto;
 }
 
 /* Sets the iframe size dyanmically */

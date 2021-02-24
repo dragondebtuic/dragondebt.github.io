@@ -7,4 +7,4 @@ With the University continuing to misrepresent the experiences of students on ca
 
 Below is the flyer and link to their upcoming event "UIC Burnout Survey Townhall: A Student Vent Sesh" where they will be highlighting some key findings as well as discussing the implications of the results of this survey for the future of UIC.
 
-![Vent Session](/public/images/shares/vent-session.jpg#left) ![Town Hall](/public/images/shares/townhall.png#right)
+![Vent Session](/public/images/shares/vent-session.jpg#left) | ![Town Hall](/public/images/shares/townhall.png#right)

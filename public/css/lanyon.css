@@ -59,6 +59,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
+img[src~="left"] {
+   width:50%;
+   height:50%;
+   float: left;
+}
+img[src~="right"] {
+   width:50%;
+   height:50%;
+   float: left;
+}
+
 /* Sets the iframe size dyanmically */
 
  #student-demands { width:100%; height:21rem; }

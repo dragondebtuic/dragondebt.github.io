@@ -9,4 +9,4 @@ Below is the flyer and link to their upcoming event "UIC Burnout Survey Townhall
 
 **Register Here:** [bit.ly/uicvent](https://bit.ly/uicvent)
 
-![Vent Session](/public/images/shares/vent-session.jpg#left) ![Town Hall](/public/images/shares/townhall.png#right)
+![Vent Session](/public/images/shares/vent-session.jpg#center) ![Town Hall](/public/images/shares/townhall.png#center)

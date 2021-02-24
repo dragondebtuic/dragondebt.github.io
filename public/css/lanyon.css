@@ -59,12 +59,19 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
+.flyer {
+   max-width:75%;
+   max-height:50%;
+   margin-left: auto;
+   margin-right:auto;
+}
+
 /* 
 Markdown image tags for 
-#md #left #right
+#center #left #right
 */
-img[src *="#md"],
-.flyer {
+
+img[src *="#center"] {
    max-width:75%;
    max-height:50%;
    margin-left: auto;

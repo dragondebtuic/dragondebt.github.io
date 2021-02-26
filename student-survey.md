@@ -3,9 +3,9 @@ layout: page
 title: Student Survey
 ---
 
-With the University continuing to misrepresent the experiences of students on campus in addition to their refusal to acknowledge the recent vocalization of students explicit needs (Check out the Student Demands page [here](https://dragondebt.com/student-demands/)), we a coalition of students came together and created the Student Burnout Survey. This survey is a collection of qualitative and quantitative data that more fully represents students experiences at UIC during the Fall 2020 semester. This Burnout survey is unaffiliated with UIC administration and was created to: give students the space to vent, scope out the needs of the UIC campus community, as well as build and direct energy towards organizing around UIC's community's struggles.
+With the University continuing to misrepresent the experiences of students on campus in addition to their refusal to acknowledge the recent vocalization of students explicit needs (Check out the Student Demands page [here](https://dragondebt.com/student-demands/)), a coalition made up of students and student organizations came together to address the problems facing our school community. The coalition conducted an assessment to gauge students’ opinions and experiences during the Fall 2020 semester and created a space for students to vent about their school experiences during the pandemic.
 
-Below is the flyer and link to their upcoming event "UIC Burnout Survey Townhall: A Student Vent Sesh" where they will be highlighting some key findings as well as discussing the implications of the results of this survey for the future of UIC.
+Below is the flyer and link to their upcoming event "Student-led Townhall: Vent Session and Student Action" where initial students’ sentiments will be shared. The coalition will also be holding a panel of representative/s from student organizations who will be addressing issues happening in UIC and around our community — and how we can take action.
 
 **Register Here:** [bit.ly/uicvent](https://bit.ly/uicvent)
 

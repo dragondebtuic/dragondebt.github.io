@@ -9,4 +9,4 @@ Below is the flyer and link to their upcoming event "Student-led Townhall: Vent 
 
 **Register Here:** [bit.ly/uicvent](https://bit.ly/uicvent)
 
-![Vent Session Dark](/public/images/shares/vent-session-dark.png#center) ![Vent Session Light](/public/images/shares/vents-session-dark.png#center)
+![Vent Session Dark](/public/images/shares/vent-session-dark.png#center) ![Vent Session Light](/public/images/shares/vent-session-light.png#center)

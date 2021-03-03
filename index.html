@@ -4,7 +4,10 @@ title: Home
 ---
 
 <h1> Welcome To Dragon Debt</h1>
-<p>We're here to #burnthebudget at UIC.</p>
+{%- comment -%}
+this is pulling the discription from the config file, change is there to change it ever where
+{%- endcomment -%}
+<p>{{ site.description }}</p>
 
 <h3 id="how-does-uic-allocate-their-funds-">How does UIC allocate their funds?</h3>
 <p>A primary focus of this project is to educate and draw attention to how the University of Illinois at Chicago (UIC) allocate its funds, and our tuition dollars. To answer this question, we examined UIC&#39;s budget and other public financial documents to identify the University&#39;s priorities, especially as the student body and other departments have been experiencing financial strain and budget cuts. </p>

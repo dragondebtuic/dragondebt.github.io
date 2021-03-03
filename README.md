@@ -2,9 +2,13 @@
 Here's a basic overview with links I thought might be helpful. Goodluck.
 ## Contents
 
-- [Build Information](#build-information)
-- [Posting](#posting)
-- [Images](#images)
+- [Welcome To Our Site](#welcome-to-our-site)
+  - [Contents](#contents)
+  - [Build Information](#build-information)
+  - [Posting](#posting)
+    - [Post Excerpts](#post-excerpts)
+  - [Images](#images)
+  - [To Do List](#to-do-list)
 
 
 ## Build Information
@@ -33,6 +37,8 @@ Here's a basic overview with links I thought might be helpful. Goodluck.
 
 * More information on [blogging in Jekyll can be found here](https://jekyllrb.com/docs/step-by-step/08-blogging/)
 
+### Post Excerpts
+https://jekyllrb.com/docs/posts/#post-excerpts
 
 ## Images
 > **A NOTE ON IMAGES:** Images are currently hosted through this Github repository, and it is not intended to be used an an image host for more than the few images we currently have.

@@ -2,6 +2,7 @@
 layout: page
 title: About Us
 permalink: /about
+description:
 ---
 
 # Who is Dragon Debt?    

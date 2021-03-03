@@ -23,9 +23,9 @@
   <meta property="twitter:title" content="{{site.title}}">
   <meta property="twitter:image" content="{{ site.shareimage }}" >
   
-  {%- if page.description != nil -%}
-    <meta property="twitter:description" cont ent="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">
+  {%- if page.excerpt != nil -%}
+    <meta property="twitter:description" content="{{ page.excerpt }}">
+    <meta property="og:description" content="{{ page.excerpt }}">
   {%- else -%}
     <meta property="og:description" content="{{ site.description }}">
     <meta property="twitter:description" content="{{ site.description }}">

@@ -22,10 +22,10 @@
   <meta property="twitter:title" content="{{site.title}}">
   <meta property="twitter:image" content="{{ site.shareimage }}" >
   
-  {%- if page.description != nil -%}
-    <meta name="description" content="{{ page.description }}">
-    <meta property="twitter:description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">
+  {%- if page.blurb != nil -%}
+    <meta name="description" content="{{ page.blurb }}">
+    <meta property="twitter:description" content="{{ page.blurb }}">
+    <meta property="og:description" content="{{ page.blurb }}">
   {%- else -%}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}">

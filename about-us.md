@@ -2,15 +2,14 @@
 layout: page
 title: About Us
 permalink: /about
-description: {{ page.excerpt }}
-excerpt_separator: <!--excerpt-->
+description: {{ excerpt }}
 ---
 
 # Who is Dragon Debt?    
 
-
+{% capture except %}  
 Dragon Debt is a project created by a  coalition student organization of University of Illinois at Chicago (UIC) who recognize the University's responsibility to create and implement a budget that prioritizes the wellbeing of its students, faculty, and the larger community. **Their repeated failure to do so has indebted UIC to all of us.**
-<!--excerpt--> 
+{% endcapture %}
 
 As a result, we came together created this project to call attention to and #BurntheBudget with the hopes of emboldening members of our UIC community, as well as other Universtiy communities, to mobilize and hold accountable the University. Our work was inspired by and with help from folks at the University of Cincinnati whose project, [Boldly Bankrupt](https://boldlybankrupt.cargo.site), empowered its students and challenged the University in how their unjustly handling of teh school;s budget. We, as well,hope to be one part of the overall fight for better and more equitable education.  
 

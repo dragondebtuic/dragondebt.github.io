@@ -9,7 +9,6 @@
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="{{site.title}}">
-  <meta name="description" content="{{ site.description }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -24,9 +23,11 @@
   <meta property="twitter:image" content="{{ site.shareimage }}" >
   
   {%- if page.excerpt != nil -%}
+    <meta name="description" content="{{ page.excerpt }}">
     <meta property="twitter:description" content="{{ page.excerpt }}">
     <meta property="og:description" content="{{ page.excerpt }}">
   {%- else -%}
+    <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="twitter:description" content="{{ site.description }}">
   {%- endif -%}

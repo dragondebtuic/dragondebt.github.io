@@ -13,23 +13,23 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dragondebt.com/">
+  <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{site.title}}">
   <meta property="og:image" content="{{ site.shareimage }}">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://dragondebt.com/">
+  <meta property="twitter:url" content="{{ site.url }}">
   <meta property="twitter:title" content="{{site.title}}">
   <meta property="twitter:image" content="{{ site.shareimage }}" >
   
-  {%- if page.description  -%}
-    code1
+  {%- if page.description != nil -%}
+    <meta property="twitter:description" cont ent="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
   {%- else -%}
-    code2
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="twitter:description" content="{{ site.description }}">
   {%- endif -%}
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="twitter:description" cont ent="{{ site.description }}">
   
   
 

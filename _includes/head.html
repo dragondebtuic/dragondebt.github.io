@@ -21,7 +21,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://dragondebt.com/">
-  <meta property="twitter:title" content="{ {site.title}}">
+  <meta property="twitter:title" content="{{site.title}}">
   <meta property="twitter:description" cont ent="{{ site.description }}">
   <meta property="twitter:image" content="{{ site.shareimage }}" >
 
@@ -29,7 +29,7 @@
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} &middot; {{ page.title }}
     {% endif %}
   </title>
 

@@ -15,19 +15,27 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dragondebt.com/">
   <meta property="og:title" content="{{site.title}}">
-  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:image" content="{{ site.shareimage }}">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://dragondebt.com/">
   <meta property="twitter:title" content="{{site.title}}">
-  <meta property="twitter:description" cont ent="{{ site.description }}">
   <meta property="twitter:image" content="{{ site.shareimage }}" >
+  
+  {%- if page.description  -%}
+    code1
+  {%- else -%}
+    code2
+  {%- endif -%}
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="twitter:description" cont ent="{{ site.description }}">
+  
+  
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }}}
     {% else %}
       {{ site.title }} &middot; {{ page.title }}
     {% endif %}

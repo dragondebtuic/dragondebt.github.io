@@ -12,5 +12,5 @@ In response to this public outcry and rising awareness, students at UIC came tog
 \*__It is important to note that as of February 2021, the UIC administration has not directly addressed the above letter.__\*
 
 ### Wondering how UIC is doing so far at implementing Student's Demands?
-![UIC Scorecard pt1](https://drive.google.com/file/d/1cdHJyHNjFnManCLMHEk0Od7nZUhaOSWR/view?usp=sharing)
-![UIC Scorecard pt2](https://drive.google.com/file/d/1ViX1gPsrBn7b1kB9BzwNZWLm-6hMEftb/view?usp=sharing)
+![UIC Scorecard pt1]()
+![UIC Scorecard pt2]()

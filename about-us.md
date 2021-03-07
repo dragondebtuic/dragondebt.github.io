@@ -16,7 +16,7 @@ As a result, we came together created this project to call attention to and #Bur
 * Host & maintain dragon debt website as a watchdog for UIC's harmful actions as well as its inaction.  
 * Create for students, staff, faculty & the community the space to advocate for our money to match our needs and implement a more equitable budget.
 
-**Although our efforts are directed towards UIC and the U of I System, we recognize that the issues we outline here are experienced in higher education across the country.**
+**Although our efforts are directed towards UIC and the U of I System, we recognize that the issues we outline here are experienced in higher education institutions nationwide.**
 
 
 ## The following are the organizations who helped create this project:     

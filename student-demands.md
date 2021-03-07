@@ -12,5 +12,5 @@ In response to this public outcry and rising awareness, students at UIC came tog
 \*__It is important to note that as of February 2021, the UIC administration has not directly addressed the above letter.__\*
 
 ### Wondering how UIC is doing so far at implementing Student's Demands?
-![UIC Scorecard pt1]()
-![UIC Scorecard pt2]()
+![UIC Scorecard pt1](/public/images/assets/student-demands-commit-and-invest.jpg)
+![UIC Scorecard pt2](/public/images/assets/student-demands-divest.jpg)

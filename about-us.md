@@ -24,7 +24,7 @@ As a result, we came together created this project to call attention to and #Bur
 
 Good Trouble Coalition  
 Bonfire  
-Roosevelt Network
+Roosevelt Network at UIC
 
 ## Are you having a similar experience at your University?     
 

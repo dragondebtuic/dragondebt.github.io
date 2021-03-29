@@ -1,6 +1,6 @@
 ---
 layout: post
-title: March Madness: Who earns the most at UIC?
+title: 'March Madness: Who earns the most at UIC?'
 tag: 'March Madness Begins"
 ---
 

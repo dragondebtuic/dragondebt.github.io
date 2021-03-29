@@ -10,6 +10,6 @@ Inspired by [Boldly Bankrupt](https://boldlybankrupt.cargo.site/), we knew that 
 The problems with UIC are multi-faceted, and as such, we will bring awareness to a range of issues and advocate for numerous changes to be made to the University. Stay in tuned to the website and our social media platforms for upcoming posts, events, and news! 
 
 ## March Madness
-To launch our work, we are bringing awareness to how UIC funds faculty, staff, students, programs, and departments through our own March Madness tournament. Throughout March, we will be revealing who are the top earners and who are the bottom earners at UIC and demonstrate the disparities in teh University's budget.
+To launch this campaign, we are bringing awareness to how UIC funds faculty, staff, students, programs, and departments through our own March Madness tournament. Throughout March, we will be revealing who are the top earners and who are the bottom earners at UIC and demonstrate the disparities in teh University's budget.
 
 {% include image-gallery.html folder="public/images/madness" %}

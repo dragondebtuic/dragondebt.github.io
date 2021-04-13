@@ -11,6 +11,6 @@ For highlights on who was included in the tournament and to see who UIC prioriti
 ![March Madness Final Bracket](/public/images/madness/Winners%20Bracket_Filled.png)
 
 
-Head on over ot our [instagram](https://www.instagram.com/dragondebtuic/?hl=en)for for more highlights on the winners and losers of Dragon Debt's March Madness. 
+Head on over ot our [instagram](https://www.instagram.com/dragondebtuic/?hl=en) for for more highlights on the winners and losers of Dragon Debt's March Madness. 
 
 Thank you to all those who participated. Stay tuned for more ways are gonna burn the budget. 

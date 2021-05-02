@@ -6,11 +6,39 @@
   <!--Fontawesome-->
   <script src="https://kit.fontawesome.com/f83ddbd721.js" crossorigin="anonymous"></script>
 
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="{{site.title}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{site.title}}">
+  <meta property="og:image" content="{{ site.shareimage }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:title" content="{{site.title}}">
+  <meta property="twitter:image" content="{{ site.shareimage }}" >
+  
+  {%- if page.blurb != nil -%}
+    <meta name="description" content="{{ page.blurb }}">
+    <meta property="twitter:description" content="{{ page.blurb }}">
+    <meta property="og:description" content="{{ page.blurb }}">
+  {%- else -%}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="twitter:description" content="{{ site.description }}">
+  {%- endif -%}
+  
+  
+
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} &middot; {{ page.title }}
     {% endif %}
   </title>
 

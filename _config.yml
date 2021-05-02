@@ -1,12 +1,12 @@
 # Setup
-title:               Dragon Debt
-tagline:             '#BurnTheBudget'
-description:         'Welcome to our new site, please pardon our appearance while we set everything up'
+title:               Dragon Debt          
+description:         "We're here to #burnthebudget at UIC"
 url:                 https://dragondebt.com
 baseurl:             ''
 paginate:            3
 paginate_path:       '/news/page:num'
 permalink:           pretty
+shareimage:          https://repository-images.githubusercontent.com/323440042/eeb93b80-7ba1-11eb-9543-960f7661de88
 
 # About/contact
 author:

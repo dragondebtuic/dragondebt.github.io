@@ -119,8 +119,10 @@ img[src *="#right"] {
  *
  * Center the page content.
  */
+
 .budget-container {
   max-width: 85%;
+  padding: 4rem;
 }
 
 .container {

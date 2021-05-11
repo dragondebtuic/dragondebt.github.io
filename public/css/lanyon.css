@@ -87,7 +87,7 @@ img[src *="#left"] {
    margin-right:auto;
    margin-top: 1rem;
 }
-img[src *="#right"], {
+img[src *="#right"] {
    float: left;
    max-width:75%;
    max-height:50%;
@@ -119,6 +119,9 @@ img[src *="#right"], {
  *
  * Center the page content.
  */
+.budget-container {
+  max-width: 85%;
+}
 
 .container {
   max-width: 28rem;

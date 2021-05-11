@@ -121,8 +121,10 @@ img[src *="#right"] {
  */
 
 .budget-container {
-  max-width: 85%;
-  padding: 4rem;
+  max-width: 95%;
+  padding: 1rem;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .container {

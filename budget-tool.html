@@ -1,0 +1,461 @@
+---
+layout: page
+title: 'Budget Tool'
+---
+
+<script>
+    const seventyFivePercentOfCpd = 1167514697;
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    function calcPercentChange(oldNum, newNum) {
+        return Math.floor(((newNum - oldNum) / oldNum) * 100);
+    }
+
+    function calculateValues() {
+        const publicHealth = parseInt($("#public-health .group-amount").html());
+        const humanRelations = parseInt($("#human-rel .group-amount").html());
+        const disabilities = parseInt($("#disabilities .group-amount").html());
+        const famSupport = parseInt($("#fam-support .group-amount").html());
+        const library = parseInt($("#library .group-amount").html());
+        const housing = parseInt($("#housing .group-amount").html());
+
+        const remainingAmount = parseInt($("#remaining-amount").html());
+        const cpdBudget = 1556686263;
+        const amountToDefund = seventyFivePercentOfCpd - remainingAmount;
+        const newAmount = cpdBudget - amountToDefund;
+
+        $('#final-health').html('$' + numberWithCommas(publicHealth));
+        $('#final-human-rel').html('$' + numberWithCommas(humanRelations));
+        $('#final-disabilities').html('$' + numberWithCommas(disabilities));
+        $('#final-fam-support').html('$' + numberWithCommas(famSupport));
+        $('#final-library').html('$' + numberWithCommas(library));
+        $('#final-housing').html('$' + numberWithCommas(housing));
+        $('#final-cpd').html('$' + numberWithCommas(newAmount));
+
+        $('#health-change').html(calcPercentChange(57174490, publicHealth) + '%');
+        $('#human-rel-change').html(calcPercentChange(1065905, humanRelations) + '%');
+        $('#disabilities-change').html(calcPercentChange(1873653, disabilities) + '%');
+        $('#fam-support-change').html(calcPercentChange(95388336, famSupport) + '%');
+        $('#library-change').html(calcPercentChange(72911461, library) + '%');
+        $('#housing-change').html(calcPercentChange(9993237, housing) + '%');
+        $('#cpd-change').html(calcPercentChange(1556686263, newAmount) + '%');
+    }
+
+    function resetValues() {
+        $('#confirmReset').modal('hide')
+
+        $('#remaining .progress-bar').css('width', '100%');
+        $("#remaining-amount").html(seventyFivePercentOfCpd)
+
+        const deptGroups = $('.dept-group')
+
+        deptGroups.each(function (index) {
+            $('#' + deptGroups[index].id + ' .progress-bar').css('width', '0%');
+            $("#" + deptGroups[index].id + " .group-amount").html(0);
+        });
+    }
+
+    function addAmount(parentId) {
+        let remainingAmount = parseInt($("#remaining-amount").html());
+        let changeAmount = parseInt($("#" + parentId + " .add-amount").val());
+        let deptAmountSelector = $("#" + parentId + " .group-amount");
+        let currentAmount = parseInt(deptAmountSelector.html());
+
+        if (changeAmount < 0) {
+            alert("Enter an amount larger than 0.");
+        } else {
+            if (changeAmount <= remainingAmount) {
+                let newAmount = currentAmount + changeAmount;
+                deptAmountSelector.html(newAmount);
+
+                let percentageOfTotal = (newAmount / seventyFivePercentOfCpd) * 100;
+
+                $('#' + parentId + ' .progress-bar').css('width', percentageOfTotal + '%');
+
+                let newRemainingAmount = remainingAmount - changeAmount;
+                $("#remaining-amount").html(newRemainingAmount)
+
+                let newRemainingPercentage = (newRemainingAmount / seventyFivePercentOfCpd) * 100
+                $('#remaining .progress-bar').css('width', newRemainingPercentage + '%');
+
+            } else {
+                alert("Enter an amount that is smaller than " + remainingAmount + '.')
+            }
+        }
+    }
+
+    function subtractAmount(parentId) {
+        let remainingAmount = parseInt($("#remaining-amount").html());
+        let changeAmount = parseInt($("#" + parentId + " .remove-amount").val());
+        let deptAmountSelector = $("#" + parentId + " .group-amount");
+        let currentAmount = parseInt(deptAmountSelector.html());
+
+        if (changeAmount < 0) {
+            alert("Enter an amount larger than 0.");
+        } else {
+            if (changeAmount <= currentAmount) {
+                let newAmount = currentAmount - changeAmount;
+                deptAmountSelector.html(newAmount);
+
+                let percentageOfTotal = (newAmount / seventyFivePercentOfCpd) * 100;
+
+                $('#' + parentId + ' .progress-bar').css('width', percentageOfTotal + '%');
+
+                let newRemainingAmount = remainingAmount + changeAmount;
+                $("#remaining-amount").html(newRemainingAmount)
+
+                let newRemainingPercentage = (newRemainingAmount / seventyFivePercentOfCpd) * 100
+                $('#remaining .progress-bar').css('width', newRemainingPercentage + '%');
+
+            } else {
+                alert("Enter an amount that is smaller than " + currentAmount + '.')
+            }
+        }
+    }
+</script>
+
+<h1>Where Will The 75% Go?</h1>
+
+<div>
+    <p>
+        Defunding the Chicago Police Department (CPD) is a fundamental method to initiate substantial, systematic change
+        in the City of Chicago. Mayor Lori Lightfoot's proposed <a
+            href="https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2021Budget/2021%20RECOMMENDATIONS.pdf">2021
+            Budget</a> allocates a staggering 38.7% of the
+        corporate fund to the CPD, whereas the departments that Chicago residents have deemed most important in the 2021
+        budget survey are all allocated less than 3% of the budget. These departments and their current budget
+        allocations
+        are depicted below.
+    </p>
+
+    <h2>Current Budget Allocations*</h2>
+
+    <p class="dept-name">Chicago Police Department - $1,556,686,263</p>
+
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-x" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Dept. of Public Health - $57,174,490</p>
+    The Chicago Department of Public Health (CDPH) is made up of several programs that promote the health and safety of
+    the citizens of Chicago.
+
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-one" role="progressbar" style="width: 3.67%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Human Relations - $1,065,905</p>
+    The Chicago Commission on Human Relations (CCHR) is intended to highlight the diversity of Chicago. CCHR also works
+    to fight against bigotry, prejudice and discriminatory practices.
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-two" role="progressbar" style="width: 0.07%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Office of Disabilities - $1,873,653</p>
+    The Mayor’s Office for People with Disabilities (MOPD) works to afford equal opportunities to people with
+    disabilities in order to accommodate them in all facets of their lives.
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-three" role="progressbar" style="width: 0.12%;" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Dept. of Family and Support Services - $95,388,336</p>
+    The Department of Family and Support Services (“DFSS”) seeks to improve the livelihoods of Chicago families and
+    children, namely those most vulnerable.
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-four" role="progressbar" style="width: 6.12%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Chicago Public Library - $72,911,461</p>
+    The Chicago Public Library ("CPL") system promotes Chicagoans reading endeavors. CPL acts as an essential vessel for
+    the equal accessibility of knowledge and technology for citizens and other visitors alike across 81 neighborhood
+    locations.
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-five" role="progressbar" style="width: 4.68%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <p class="dept-name">Department of Housing - $9,993,237</p>
+    The Department of Housing (DOH) is committed to ensuring that Chicago's housing resources and policies address the
+    needs of residents of all income levels.
+    <div class="progress" style="height: 30px;">
+        <div class="progress-bar bar-six" role="progressbar" style="width: 0.64%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+</div>
+<div>
+    <h2>Your Budget Allocations</h2>
+
+    <p>
+        Here, you can reallocate 75% or $1,167,514,697 of the 2021 proposed CPD budget to the
+        departments you feel should be prioritized over CPD to ensure health and safety for all Chicagoans.
+        This encourages the revitalization of communities; prioritizing the needs of people over antiquated
+        institutions of violence. #WEWRITETHEBUDGET
+    </p>
+
+    <div class="modal fade" id="finishDefunding" tabindex="-1" aria-labelledby="finishDefundingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="finishModalLabel">Summary</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Department</th>
+                                <th scope="col">2021 Budget</th>
+                                <th scope="col">Your Budget</th>
+                                <th scope="col">% Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Dept. of Public Health</th>
+                                <td>$57,174,490</td>
+                                <td id="final-health">X</td>
+                                <td id="health-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Human Relations</th>
+                                <td>$1,065,905</td>
+                                <td id="final-human-rel">X</td>
+                                <td id="human-rel-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Office of Disabilities</th>
+                                <td>$1,873,653</td>
+                                <td id="final-disabilities">X</td>
+                                <td id="disabilities-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dept. of Family and Support Services</th>
+                                <td>$95,388,336</td>
+                                <td id="final-fam-support">X</td>
+                                <td id="fam-support-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Chicago Public Library</th>
+                                <td>$72,911,461</td>
+                                <td id="final-library">X</td>
+                                <td id="library-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Department of Housing </th>
+                                <td>$9,993,237</td>
+                                <td id="final-housing">X</td>
+                                <td id="housing-change">X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CPD </th>
+                                <td>$1,556,686,263</td>
+                                <td id="final-cpd">X</td>
+                                <td id="cpd-change">X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmReset" tabindex="-1" aria-labelledby="confirmResetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Confirm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Reset your allocations?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="resetValues()">Clear my selections</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="remaining">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Remaining</span>
+            </div>
+            <div class="col-2">
+                $<span id="remaining-amount">1167514697</span>
+            </div>
+            <div class="col-8">
+                <button type="button" class="btn btn-secondary mb-1" data-toggle="modal"
+                    data-target="#confirmReset">Reset</button>
+            </div>
+
+        </div>
+
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-total" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="public-health" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Dept. of Public Health</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('public-health')">Add</button>
+
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1"
+                    onclick="subtractAmount('public-health')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-one health-bar" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="human-rel" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Human Relations</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('human-rel')">Add</button>
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="subtractAmount('human-rel')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-two" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="disabilities" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Office of Disabilities</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('disabilities')">Add</button>
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="subtractAmount('disabilities')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-three" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="fam-support" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Dept. of Family and Support Services</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('fam-support')">Add</button>
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="subtractAmount('fam-support')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-four" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="library" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Chicago Public Library</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('library')">Add</button>
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="subtractAmount('library')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-five" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div id="housing" class="dept-group">
+        <div class="row">
+            <div class="col-2">
+                <span class="dept-name">Department of Housing</span>
+            </div>
+            <div class="col-2">
+                $<span class="group-amount">0</span>
+            </div>
+            <div class="col-8">
+                <input class="add-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="addAmount('housing')">Add</button>
+
+                <input class="remove-amount" type="number" value="100000000">
+                <button type="button" class="btn btn-info mb-1" onclick="subtractAmount('housing')">Remove</button>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar bar-six" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <button type="button" class="btn btn-success btn-lg mb-1" data-toggle="modal" data-target="#finishDefunding"
+            onclick="calculateValues()">I've finished defunding the police!</button>
+    </div>
+    <footer>
+        <p>
+            * All of our numbers are from the <a
+                href="https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2021Budget/2021%20RECOMMENDATIONS.pdf">Mayor's
+                2021 Budget Recommendations</a>.
+        </p>
+    </footer>
+</div>
+
+<div id="FFExtension" style="display: none;"></div>

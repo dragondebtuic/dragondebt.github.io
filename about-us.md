@@ -17,7 +17,7 @@ As a result, we mobilized and created this project to #BurntheBudget. We seek to
 **Although our efforts are directed towards UIC and the U of I System, we recognize that the issues we outline here are experienced in higher education institutions nationwide.**
 
 
-## The following organizations are members of and helped create this project:     
+## The following organizations are members of the Dragon Debt Project:     
 
 
 Good Trouble Coalition  

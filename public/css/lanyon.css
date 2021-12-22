@@ -554,7 +554,7 @@ a.pagination-item:hover {
   position: relative;
   width: 4rem;
   display: inline-block;
-  margin-bottom: -.75rem;
+  margin-bottom: 1rem;
 }
 .theme-base-DD .sidebar-toggle {
   margin-top: .75rem;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stay Tuned
+title: 'Stay Tuned'
 tag: 'March Madness'
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'March Madness: Place your bets!'
-tag: 'March Madness Blank Bracket'
+title: "March Madness: Place your bets!"
+tags: 'March Madness'
 ---
 
 Download our Blank Bracket below and follow along with our social media to find out who wins Dragon Debts March Madness!

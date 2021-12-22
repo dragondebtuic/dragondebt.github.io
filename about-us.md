@@ -1,9 +1,7 @@
 ---
 layout: page
 permalink: /about
----
-
-# Who is Dragon Debt?    
+---  
   
 Dragon Debt is a project created by a coalition of student organizations at the University of Illinois at Chicago (UIC) who recognize the University's responsibility to create and implement a budget that prioritizes the wellbeing of its students, faculty, and the larger community. **Their repeated failure to do so has indebted UIC to all of us.**
 

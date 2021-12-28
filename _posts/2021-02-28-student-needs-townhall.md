@@ -8,4 +8,4 @@ With the University continuing to misrepresent the experiences of students on ca
 
 Below is the flyer and link to their upcoming event "Student-led Townhall: Vent Session and Student Action" where initial students’ sentiments will be shared. The coalition will also be holding a panel of representative/s from student organizations who will be addressing issues happening in UIC and around our community — and how we can take action.
 
-![Vent Session Dark](/public/images/shares/vent-session-dark.png#center) ![Vent Session Light](/public/images/shares/vent-session-light.png#center)
+![Vent Session Dark](/public/images/townhall/vent-session-dark.png#center) ![Vent Session Light](/public/images/townhall/vent-session-light.png#center)
